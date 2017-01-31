@@ -638,7 +638,7 @@ ul li, ol li{
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 200px;
+    top: 100px;
 
     background: rgba(0,0,0,0.5);
     color: #EEE;
@@ -688,7 +688,7 @@ ul li, ol li{
 /*
     ... and we will show it when the first step (with id 'bored') is active.
 */
-.impress-on-bored .hint {
+.impress-on-pre_title .hint {
     /*
         We remove the transparency and position the hint in its default fixed
         position.
@@ -709,11 +709,11 @@ ul li, ol li{
         into its correct position and after that we fade it in with opacity
         transition.
     */
-    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
-    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
-    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
-    -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
-    transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+    -webkit-transition: opacity 1s 4s, -webkit-transform 0.5s 3.5s;
+    -moz-transition:    opacity 1s 4s,    -moz-transform 0.5s 3.5s;
+    -ms-transition:     opacity 1s 4s,     -ms-transform 0.5s 3.5s;
+    -o-transition:      opacity 1s 4s,      -o-transform 0.5s 3.5s;
+    transition:         opacity 1s 4s,         transform 0.5s 3.5s;
 }
 
 /*

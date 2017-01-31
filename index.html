@@ -9,6 +9,9 @@
     </head>
     <body>
       <div id="impress">
+        <div id="pre_title" class="step" data-x="0" data-y="0" data-scale="7">
+          <span style="display: none;">Pre-title that displays hint</span>
+        </div>
         <div id="title" class="step" data-x="0" data-y="0" data-scale="7">
           <h1><center>Scrum</center></h1>
         </div>
@@ -133,6 +136,14 @@
           <img height="250px" src="img/attribution.png" alt="Images courtesy of Innolutions Visual AGILE lexicon" title="Images courtesy of Innolution's Visual AGILE Lexicon" />
         </div>
       </div>
+      <div class="hint">
+            <p>Use a spacebar or arrow keys to navigate</p>
+      </div>
+      <script>
+        if ("ontouchstart" in document.documentElement) {
+          document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+        }
+      </script>
       <script type="text/javascript" src="js/impress.js"></script>
       <script>impress().init();</script>
     </body>
