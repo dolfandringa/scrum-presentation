@@ -250,6 +250,24 @@ a:focus {
     3D positioning along Z axis.
 */
 
+.manifesto {
+  font-size: 1.8em;
+  width: 1100px;
+}
+.manifesto .first{
+  display: inline-block;
+  width: 450px;
+}
+.manifesto .second{
+  display: inline-block;
+  width: 120px;
+  font-style: italic;
+}
+.manifesto .third{
+  display: inline-block;
+  width: 450px;
+}
+
 #title {
     padding: 0;
 }
