@@ -3,16 +3,62 @@
     <head>
         <title>Impress Tutorial</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+        <link href="css/theme1.css" rel="stylesheet" />
     </head>
     <body>
       <div id="impress">
-        <div class="step" data-x="0" data-y="0">
-          Step 1
+        <div id="title" class="step" data-x="0" data-y="0" data-scale="7">
+          <h1><center>Scrum</center></h1>
         </div>
-        <div class="step" data-x="500" data-y="0">
-           Step 2
+        <div id="agenda" class="step" data-x="0" data-y="1100" data-scale="5">
+          <h2>3 Days</h2>
+        </div>
+        <div id="day1" class="step" data-x="200" data-y="900" data-scale="2">
+          <h1>Day 1</h1>
+          Overview 
+        </div>
+        <div id="day2" class="step" data-x="200" data-y="1300" data-scale="2">
+          <h1>Day 2</h1>
+          The different roles
+        </div>
+        <div id="day3" class="step" data-x="200" data-y="1700" data-scale="2">
+          <h1>Day 3</h1>
+          Workflow
+        </div>
+        <div id="overview_day1" class="step" data-x="600" data-y="2800" data-rotate="90" data-scale="2">
+          <h1>Today</h1>
+          <ul>
+            <li>Problems</li>
+            <li>Pillars of scrum</li>
+            <li>Overview of scrum</li>
+          </ul>
+        </div>
+        <div id="problems" class="step" data-x="-2000" data-z=-600 data-y="3000" data-rotate="0" data-scale="1">
+          <h1><center>What problems do you encounter now?</center></h1>
+        </div>
+        <div id="waterfall" class="step" data-x="-2000" data-z=-600 data-y="3600" data-rotate="0" data-scale="1">
+          <h1>Waterfall</h1>
+          <img src="img/waterfall.png" title="Waterfall" alt="The waterfall methodology" />
+        </div>
+        <div id="waterfall_gantt" class="step" data-z=-600 data-x="-1000" data-y="3600" data-rotate="0" data-scale="1">
+          <h2>Gantt charts</h2>
+          <img src="img/gantt.png" title="Gantt Chart" alt="Gantt Chart" />
+        </div>
+        <div id="waterfall_drawbacks" class="step" data-z=-600 data-x="-1800" data-y="4100" data-rotate="0" data-scale="1">
+          <h2>Drawbacks</h2>
+        </div>
+        <div id="waterfall_drawbacks1" class="step" data-z=-600 data-x="-1800" data-y="4200" data-rotate="0" data-scale="1">
+            A lot of time spent on planning
+        </div>
+        <div id="waterfall_drawbacks2" class="step" data-z=-600 data-x="-1800" data-y="4400" data-rotate="0" data-scale="1">
+          Users need to see what they <em>don't want</em> before they know what they <em>do want</em>.
+        </div>
+        <div id="waterfall_drawbacks3" class="step" data-z=-600 data-x="-1800" data-y="4600" data-rotate="0" data-scale="1">
+            We're shooting at a moving target
         </div>
       </div>
-      <script type="text/javascript" src="impress.js"></script>
+      <script type="text/javascript" src="js/impress.js"></script>
+      <script>impress().init();</script>
     </body>
 </html>
