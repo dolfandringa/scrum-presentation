@@ -254,8 +254,7 @@ a:focus {
   padding: 0px;
 }
 .fullwidth_img img{
-  width: 134%;
-  margin-left: -17%;
+  width: 100%;
 }
 .fullheight_img img{
   width: 80%;
@@ -281,6 +280,12 @@ a:focus {
 
 #title {
     padding: 0;
+}
+#links ul{
+    font-size: 0.7em;
+}
+#links li a{
+    font-size: 0.7em;
 }
 
 #title .try {
