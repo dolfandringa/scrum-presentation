@@ -250,6 +250,17 @@ a:focus {
     3D positioning along Z axis.
 */
 
+.fullwidth_img, .fullheight_img{
+  padding: 0px;
+}
+.fullwidth_img img{
+  width: 134%;
+  margin-left: -17%;
+}
+.fullheight_img img{
+  width: 80%;
+}
+
 .manifesto {
   font-size: 1.8em;
   width: 1100px;
