@@ -165,7 +165,7 @@ a:focus {
 
 .step {
     position: relative;
-    width: 900px;
+    width: 1000px;
     padding: 40px;
     margin: 20px auto;
 
@@ -256,8 +256,35 @@ a:focus {
 .fullwidth_img img{
   width: 100%;
 }
+.impress-enabled .step.fullwidth_img
+{
+    opacity: 0.1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active.fullwidth_img
+{
+  opacity: 1 
+}
 .fullheight_img img{
-  width: 80%;
+  width: 100%;
+}
+.fullheight_img{
+  padding: 0px;
+  width: 1200px;
+}
+
+.small_text {
+  font-size: 1.9em;
+}
+
+.medium_text {
+  font-size: 2.2em;
 }
 
 .manifesto {

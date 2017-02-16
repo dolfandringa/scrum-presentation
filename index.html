@@ -3,7 +3,7 @@
     <head>
         <title>Introduction to Srum workshops</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+        <link href="css/fonts.css" rel="stylesheet" />
         <link href="css/theme1.css" rel="stylesheet" />
         <link rel="image_src" href="img/scrum_overview.html" / >
     </head>
@@ -41,31 +41,53 @@
         <div id="problems" class="step" data-x="-2000" data-z=-600 data-y="3000" data-rotate="0" data-scale="1">
           <h1><center>What problems do you encounter now?</center></h1>
         </div>
-        <div id="waterfall" class="step" data-x="-2000" data-z=-600 data-y="3600" data-rotate="0" data-scale="1">
+        <div id="problems_q1" class="step medium_text" data-x="-700" data-z=-600 data-y="2800" data-rotate="0" data-scale="1">
+          Are your projects delivered on time?
+        </div>
+        <div id="problems_q2" class="step medium_text" data-x="-700" data-z=-600 data-y="2900" data-rotate="0" data-scale="1">
+          Do you feel customers are happy with the end result?
+        </div>
+        <div id="problems_q3" class="step medium_text" data-x="-700" data-z=-600 data-y="3000" data-rotate="0" data-scale="1">
+          Is your team proud of the project results?
+        </div>
+        <div id="problems_q4" class="step medium_text" data-x="-700" data-z=-600 data-y="3100" data-rotate="0" data-scale="1">
+          Do you have to work overtime often for projects?
+        </div>
+        <div id="problems_q5" class="step medium_text" data-x="-700" data-z=-600 data-y="3250" data-rotate="0" data-scale="1">
+          Are there frustrations within the team because the customer changed their minds or a project turned out to be more complicated?
+        </div>
+        <div id="waterfall" class="step" data-x="-2000" data-z=-600 data-y="3900" data-rotate="0" data-scale="1">
           <h1>Waterfall</h1>
           <img src="img/waterfall.png" title="Waterfall" alt="The waterfall methodology" />
         </div>
-        <div id="waterfall_gantt" class="step" data-z=-600 data-x="-1000" data-y="3600" data-rotate="0" data-scale="1">
+        <div id="waterfall_gantt" class="step" data-z=-600 data-x="-600" data-y="3900" data-rotate="0" data-scale="1">
           <h2>Gantt charts</h2>
           <img src="img/gantt.png" title="Gantt Chart" alt="Gantt Chart" />
         </div>
-        <div id="waterfall_drawbacks" class="step" data-z="-600" data-x="-1800" data-y="4100" data-rotate="0" data-scale="1">
+        <div id="cone_uncertainty" class="step" data-z=-600 data-x="-1800" data-y="4750" data-rotate="0" data-scale="1">
+          <h2>Cone of uncertainty</h2>
+          <img width="800px" src="img/cone_of_uncertainty.jpg" title="Gantt Chart" alt="Gantt Chart" />
+        </div>
+        <div id="waterfall_drawbacks" class="step" data-z="-600" data-x="-500" data-y="4400" data-rotate="0" data-scale="1">
           <h2>Drawbacks</h2>
         </div>
-        <div id="waterfall_drawbacks1" class="step" data-z="-600" data-x="-1800" data-y="4200" data-rotate="0" data-scale="1">
+        <div id="waterfall_drawbacks1" class="step" data-z="-600" data-x="-500" data-y="4500" data-rotate="0" data-scale="1">
             A lot of time spent on planning
         </div>
-        <div id="waterfall_drawbacks2" class="step" data-z="-600" data-x="-1800" data-y="4400" data-rotate="0" data-scale="1">
+        <div id="waterfall_drawbacks2" class="step" data-z="-600" data-x="-500" data-y="4700" data-rotate="0" data-scale="1">
           Users need to see what they <em>don't want</em> before they know what they <em>do want</em>.
         </div>
-        <div id="waterfall_drawbacks3" class="step" data-z="-600" data-x="-1800" data-y="4600" data-rotate="0" data-scale="1">
+        <div id="waterfall_drawbacks3" class="step" data-z="-600" data-x="-500" data-y="4900" data-rotate="0" data-scale="1">
             We're shooting at a moving target
         </div>
-        <div id="scrum_start_title" class="step" data-z="-600" data-x="800" data-y="4000" data-rotate="90">
-          <h1><center>Scrum</center></h1>
+        <div id="agile_start_title" class="step" data-z="-600" data-x="800" data-y="4000" data-rotate="90">
+          <h1><center>Agile</center></h1>
         </div>
-        <div id="scrum_agile" class="step" data-z="-600" data-x="600" data-y="4000" data-rotate="90">
-          <h2>Agile</h1>
+        <div id="agile_scrum" class="step" data-z="-600" data-x="600" data-y="4000" data-rotate="90">
+          <h2>Scrum</h1>
+        </div>
+        <div id="agile_kanban" class="step" data-z="-600" data-x="500" data-y="4000" data-rotate="90">
+          <h2>Kanban</h1>
         </div>
         <div id="scrum_iterative" class="step" data-z="-600" data-x="400" data-y="4000" data-rotate="90">
           <h2>Iterative</h1>
@@ -97,43 +119,100 @@
         <div id="scrum_manifesto4" class="step manifesto" data-z="-600" data-x="320" data-y="5000" data-rotate="90">
           <span class="first">Responding to change </span><span class="second">over </span><span class="third">following a plan</span>
         </div>
-        <div id="scrumm_process_overview" class="step fullwidth_img" data-z="-600" data-x="-1800" data-y="5500" data-rotate="0">
+        <div id="scrum_iterations" class="step fullwidth_img" data-z="-600" data-x="400" data-y="6500" data-rotate="90">
+          <img src="img/scrum-iteration-detail.png" title="The scrum iterations" alt="The Scrum Iterations" />
+        </div>
+        <div id="scrum_kanban" class="step small_text" data-z="-600" data-x="-1800" data-y="8800" data-rotate="0">
+          <div style="float: left; width: 400px">
+            <h1>Scrum</h1>
+            <ul>
+               <li>Complete project management workflow</li>
+               <li>More impact to implement</li>
+               <li>Potentially larger rewards</li>
+             </ul>
+          </div>
+          <div style="float: right; width: 400px">
+            <h1>Kanban</h1>
+            <ul>
+              <li>Simpler</li>
+              <li>Easier to integrate</li>
+              <li>Smaller rewards</li>
+            </ul>
+          </div>
+        </div>
+        <div id="kanban_board" class="step fullheight_img" data-z="-600" data-x="-500" data-y="8800" data-rotate="0">
+          <img src="img/kanban.png" title="The Kanban Board" alt="The Kanban Board" />
+        </div>
+        <div id="scrum_iterations2" class="step fullwidth_img" data-z="-600" data-x="400" data-y="6500" data-rotate="90">
+          <img src="img/scrum-iteration-detail.png" title="The scrum iterations" alt="The Scrum Iterations" />
+        </div>
+        <div id="scrum_process_overview" class="step fullwidth_img" data-z="-600" data-x="900" data-y="8800" data-rotate="0">
           <img src="img/scrum_overview.png" title="The scrum process" alt="The Scrum Process" />
         </div>
-        <div id="scrum_product" class="step fullwidth_img" data-z="-600" data-x="-1800" data-y="5500" data-rotate="0">
+        <div id="scrum_product" class="step fullwidth_img" data-z="-600" data-x="900" data-y="8800" data-rotate="0">
           <img src="img/product.png" title="Potentially Shippable Product" />
         </div>
-        <div id="scrum_backlog" class="step fullwidth_img" data-z="-600" data-x="-1800" data-y="5500" data-rotate="0">
+        <div id="scrum_backlog" class="step fullwidth_img" data-z="-600" data-x="900" data-y="8800" data-rotate="0">
           <img src="img/backlog.png" title="Backlog" />
         </div>
-        <div id="scrum_sprint_planning" class="step fullwidth_img" data-z="-600" data-x="-1800" data-y="5500" data-rotate="0">
-          <img src="img/sprint_planning.png" title="Sprint Planning" />
+        <div id="backlog_detail" class="step small_text" data-z="-2400" data-x="300" data-y="8700" data-rotate="0" data-scale="0.1">
+          <div style="width: 300px;">
+            <h2><center>Backlog</center></h2>
+            <img height="400px" src="img/backlog_detail.png" alt="Backlog" Title="The product backlog" />
+          </div>
         </div>
-        <div id="scrum_sprint_taskboard" class="step fullwidth_img" data-z="-600" data-x="-1800" data-y="5500" data-rotate="0">
-          <img src="img/sprint_taskboard.png" title="Sprint Taskboard" />
-        </div>
-        <div id="scrum_sprint" class="step fullwidth_img" data-z="-600" data-x="-1800" data-y="5500" data-rotate="0">
-          <img src="img/scrum_sprint.png" title="The sprint" />
-        </div>
-        <div id="scrum_product2" class="step fullwidth_img" data-z="-600" data-x="-1800" data-y="5500" data-rotate="0">
-          <img src="img/product.png" title="Potentially Shippable Product" />
-        </div>
-        <div id="scrum_introspection" class="step fullwidth_img" data-z="-600" data-x="-1800" data-y="5500" data-rotate="0">
-          <img src="img/scrum_introspection.png" title="Introspection" />
-        </div>
-        <div id="scrumm_process_overview2" class="step fullwidth_img" data-z="-600" data-x="-1800" data-y="5500" data-rotate="0">
-          <img src="img/scrum_overview.png" title="The scrum process" alt="The Scrum Process" />
-        </div>
-        <div id="links" class="step" data-z="-600" data-x="-1800" data-y="6500">
-          <h1>Links</h1>
+        <div id="epics" class="step small_text" data-z="-2400" data-x="360" data-y="8680" data-rotate="0" data-scale="0.1">
+          <h2>Epics</h2>
           <ul>
-            <li>This presentation: <a href="http://allican.be/scrum-presentation/">http://allican.be/scrum-presentation/</a>
-            <li>Number of good short movies on scrum: <a href="http://www.collab.net/services/training/agile_e-learning">http://www.collab.net/services/training/agile_e-learning</a>
-            <li>Scrum overview PDF: <a href="https://www.scrumalliance.org/scrum/media/ScrumAllianceMedia/Files%20and%20PDFs/Agile%20Resources/S_OverviewofScrumFrame_1.pdf">https://www.scrumalliance.org/scrum/media/ScrumAllianceMedia/Files%20and%20PDFs/Agile%20Resources/S_OverviewofScrumFrame_1.pdf</a>
-              <li>How to implement scrum in 10 easy steps: <a href="http://www.allaboutagile.com/how-to-implement-scrum-in-10-easy-steps/">http://www.allaboutagile.com/how-to-implement-scrum-in-10-easy-steps/</a>
+            <li>Large/general "features"</li>
+            <li>Vague</li>
           </ul>
         </div>
-        <div id="attribution" class="step active" data-z="-600" data-x="-1050" data-y="6300">
+        <div id="userstories" class="step small_text" data-z="-2400" data-x="360" data-y="8720" data-rotate="0" data-scale="0.1">
+          <h2>User Stories/Tasks</h2>
+          <ul>
+            <li>Adds value</li>
+            <li>Only concerns "What" not "How"</li>
+            <li>Independent</li>
+            <li>Small</li>
+            <li>Testable</li>
+            <li>Estimatable</li>
+          </ul>
+        </div>
+        <div id="scrum_backlog2" class="step fullwidth_img" data-z="-600" data-x="900" data-y="8800" data-rotate="0">
+          <img src="img/backlog.png" title="Backlog" />
+        </div>
+        <div id="scrum_sprint_planning" class="step fullwidth_img" data-z="-600" data-x="900" data-y="8800" data-rotate="0">
+          <img src="img/sprint_planning.png" title="Sprint Planning" />
+        </div>
+        <div id="scrum_sprint_taskboard" class="step fullwidth_img" data-z="-600" data-x="900" data-y="8800" data-rotate="0">
+          <img src="img/sprint_taskboard.png" title="Sprint Taskboard" />
+        </div>
+        <div id="scrum_sprint" class="step fullwidth_img" data-z="-600" data-x="900" data-y="8800" data-rotate="0">
+          <img src="img/scrum_sprint.png" title="The sprint" />
+        </div>
+        <div id="scrum_product2" class="step fullwidth_img" data-z="-600" data-x="900" data-y="8800" data-rotate="0">
+          <img src="img/product.png" title="Potentially Shippable Product" />
+        </div>
+        <div id="scrum_introspection" class="step fullwidth_img" data-z="-600" data-x="900" data-y="8800" data-rotate="0">
+          <img src="img/scrum_introspection.png" title="Introspection" />
+        </div>
+        <div id="scrum_process_overview2" class="step fullwidth_img" data-z="-600" data-x="900" data-y="8800" data-rotate="0">
+          <img src="img/scrum_overview.png" title="The scrum process" alt="The Scrum Process" />
+        </div>
+        <div id="links" class="step medium_text" data-z="-600" data-x="-1800" data-y="9800">
+          <h1>Links</h1>
+          <ul>
+            <li>This presentation: <a href="http://allican.be/scrum-presentation/">http://allican.be/scrum-presentation/</a></li>
+            <li>Number of good short movies on scrum: <a href="http://www.collab.net/services/training/agile_e-learning">http://www.collab.net/services/training/agile_e-learning</a></li>
+            <li>Scrum overview PDF: <a href="https://www.scrumalliance.org/scrum/media/ScrumAllianceMedia/Files%20and%20PDFs/Agile%20Resources/S_OverviewofScrumFrame_1.pdf">https://www.scrumalliance.org/scrum/media/ScrumAllianceMedia/Files%20and%20PDFs/Agile%20Resources/S_OverviewofScrumFrame_1.pdf</a></li>
+            <li>How to implement scrum in 10 easy steps: <a href="http://www.allaboutagile.com/how-to-implement-scrum-in-10-easy-steps/">http://www.allaboutagile.com/how-to-implement-scrum-in-10-easy-steps/</a></li>
+            <li>Cost estimation in Agile projects: <a href="https://www.toptal.com/agile/software-costs-estimation-in-agile-project-management">https://www.toptal.com/agile/software-costs-estimation-in-agile-project-management</a></li>
+            <li>Measuring project performance in agile projects: <a href="https://www.atlassian.com/agile/metrics">https://www.atlassian.com/agile/metrics</a></li>
+            <li>Scrum vs Kanban: <a href="http://www.agileweboperations.com/scrum-vs-kanban">http://www.agileweboperations.com/scrum-vs-kanban</a></li>
+          </ul>
+        </div>
+        <div id="attribution" class="step active" data-z="-600" data-x="-1050" data-y="9550">
           <img height="250px" src="img/attribution.png" alt="Images courtesy of Innolutions Visual AGILE lexicon" title="Images courtesy of Innolution's Visual AGILE Lexicon" />
         </div>
       </div>
